@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)http://192.168.160.71:57874/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+<!-- Code injected by Five-server -->
+  <script async="" data-id="five-server" data-file="c:\Users\ADMIN\Desktop\FeedBack Form\index.html" type="application/javascript" src="./Feedback Form_files/fiveserver.js.download"></script>
+  <style>      
+      /* Injected by five-server */
+      /*[data-highlight="true"] {
+        border: 1px rgb(90,170,255) solid !important;
+        background-color: rgba(155,215,255,0.5);
+        animation: fadeOutHighlight 1s forwards 0.5s;
+      }
+      img[data-highlight="true"] {
+        filter: sepia(100%) hue-rotate(180deg) saturate(200%);
+        animation: fadeOutHighlightIMG 0.5s forwards 0.5s;
+      }*/
+      @keyframes fadeOutHighlight {
+        from {background-color: rgba(155,215,255,0.5);}
+        to {background-color: rgba(155,215,255,0);}
+      }      
+      @keyframes fadeOutHighlightIMG {
+        0% {filter: sepia(100%) hue-rotate(180deg) saturate(200%);}
+        33% {filter: sepia(66%) hue-rotate(180deg) saturate(100%);}
+        50% {filter: sepia(50%) hue-rotate(90deg) saturate(50%);}
+        66% {filter: sepia(33%) hue-rotate(0deg) saturate(100%);}
+        100% {filter: sepia(0%) hue-rotate(0deg) saturate(100%);}
+      }
+      @keyframes fiveserverInfoPopup {
+        0%   {top:-40px;}
+        15%  {top:4px;}
+        85%  {top:4px;}
+        100% {top:-40px;}
+      }
+      /*smaller*/
+      @media (max-width: 640px) {
+        #fiveserver-info-wrapper {
+          max-width: 98%;
+        }
+        #fiveserver-info {
+          border-radius: 0px;
+        }      
+      }
+
+      </style></head>
+<body style="background-color: aquamarine;"><h1 style="text-align: center;"><p style="background-color: rgb(92, 225, 230);">Student Feedback Form</p></h1>
+
+    <form action="http://192.168.160.71:57874/submit.php" method="post">
+        <div>
+           <h3> <label for="FName"><b>First Name:</b></label></h3>
+            <input type="text" id="FName" placeholder="Enter First Your Name"><br>
+
+            <h3> <label for="LName"><b>Last Name:</b></label></h3>
+            <input type="text" id="LName" placeholder="Enter Last Your Name"><br>
+
+            <h3> <label for="Email Id"><b> Mail Id:</b></label></h3>
+            <input type="text" id="Email Id" placeholder="Enter Your Mail Id"><br>
+
+            <h3> <label for="Date of Birth"><b>Date of Birth:</b></label></h3>
+            <input type="date" id="Date of Birth" name="Date of Birth"><br>
+
+            <h3> <label for="Gender"><b>Gender:</b></label></h3>
+            <input type="radio" name="Gender" value="Female">Female
+            <input type="radio" name="Gender" value="Male">Male<br>
+
+
+            <h3> <label for="Course"><b>Course:</b></label></h3>
+            <select name="Course" id="Course" required="">
+                <option value="Java FullStack">Java FullStack</option>
+                <option value="Python FullStack">Python FullStack</option>
+                <option value="Java Selenim">Java Selenium</option>
+                <option value="AWS">AWS</option>
+                <option value="Data Analytics">Data Analytics</option>
+                <option value="Data Science">Data Science</option>
+                <option value="Cloud Computing">Cloud Computing</option>
+            </select>
+
+            <h3> <label for="How good is the quality of teaching by your institute&#39;s faculty?"><b>How good is the quality of teaching by your institute's faculty?:</b></label></h3>
+            <input type="radio" name="How good is the quality of teaching by your institute&#39;s faculty?" value="Not at all">Not at all<br>
+            <input type="radio" name="How good is the quality of teaching by your institute&#39;s faculty?" value="Slightly">Slightly<br>
+            <input type="radio" name="How good is the quality of teaching by your institute&#39;s faculty?" value="Very Good">Very Good<br>
+            <input type="radio" name="How good is the quality of teaching by your institute&#39;s faculty?" value="Extermely">Extermely<br>
+
+            <h3> <label for="How satisfied are you with your institue&#39;s teaching pattern?"><b>How satisfied are you with your institue's teaching pattern?:</b></label></h3>
+            <input type="radio" name="How satisfied are you with your institue&#39;s teaching pattern?" value="Not at all">Not at all<br>
+            <input type="radio" name="How satisfied are you with your institue&#39;s teaching pattern?" value="Slightly">Slightly<br>
+            <input type="radio" name="How satisfied are you with your institue&#39;s teaching pattern?" value="Very Good">Very Good<br>
+            <input type="radio" name="How satisfied are you with your institue&#39;s teaching pattern?" value="Extermely">Extermely<br>
+
+            <h3> <label for="How well-designed is your institue&#39;s course curriculum?"><b>How well-designed is your institue's course curriculum?:</b></label></h3>
+            <input type="radio" name="How well-designed is your institue&#39;s course curriculum?" value="Not at all">Not at all<br>
+            <input type="radio" name="How well-designed is your institue&#39;s course curriculum?" value="Slightly">Slightly<br>
+            <input type="radio" name="How well-designed is your institue&#39;s course curriculum?" value="Very Good">Very Good<br>
+            <input type="radio" name="How well-designed is your institue&#39;s course curriculum?" value="Extermely">Extermely<br>
+
+            <h3> <label for="Overall quality of the equipment used for the course."><b>Overall quality of the equipment used for the course.:</b></label></h3>
+            <input type="radio" name="Overall quality of the equipment used for the course." value="Poor">Poor<br>
+            <input type="radio" name="Overall quality of the equipment used for the course." value="Fair">Fair<br>
+            <input type="radio" name="Overall quality of the equipment used for the course." value="Good">good<br>
+            <input type="radio" name="Overall quality of the equipment used for the course." value="Very Good">Very Good<br>
+
+            <h3> <label for="Overall quality of the course."><b>Overall quality of the course.:</b></label></h3>
+            <input type="radio" name="Overall quality of the course." value="Poor">Poor<br>
+            <input type="radio" name="Overall quality of the course." value="Fair">Fair<br>
+            <input type="radio" name="Overall quality of the course." value="Good">good<br>
+            <input type="radio" name="Overall quality of the course." value="Very Good">Very Good<br>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+            <button><a href="http://192.168.160.71:57874/sub.html">submit</a></button>
+        </div>
+    </form>
+
+
+
+            
+            
+
+            
+
+
+
+
+
+            
+
+            
+            
+
+        
+    
+    
+
+</body></html>
