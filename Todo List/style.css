@@ -1,0 +1,89 @@
+body{
+    background: rgb(118, 203, 236);
+    text-align: center;
+    font-family: 'open sans', sans-serif;
+}
+.intro{
+    margin: 30px 0px;
+    font-weight: bold;
+}
+h1{
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-weight: 800;
+}
+p{
+    font-weight: 600;
+}
+#first{
+    margin-top: 10px;
+    color: rgb(247, 247, 64);
+}
+#second{
+    color: rgb(59, 158, 20);
+}
+#third{
+    color:rgb(42, 128, 42);
+    margin-bottom: 30px;
+}
+#enter{
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: rgb(103, 235, 191);
+    background-color: rgb(27, 131, 131);
+    transition: all 0.75s ease;
+    -webkit-transition: all 0.75s ease;
+    -moz-transition: all 0.75s ease;
+    -ms-transition: all 0.75s ease;
+    -o-transition: all 0.75s ease;
+    font-weight: normal;
+}
+#enter:hover{
+    background-color: rgb(243, 247, 247);
+    color: rgb(14, 121, 121);
+}
+ul{
+    text-align: left;
+    margin-top: 20px;
+}
+li{
+    list-style: none;
+    padding: 10px 20px;
+    color: #ffffffff;
+    text-transform: capitalize;
+    font-weight: 600;
+    border: 2px solid #025f70;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background: #4EB9CD;
+    transition: all 0.75s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+li:hover{
+    background-color: #76CFE0;
+}
+li>button{
+    font-weight: normal;
+    background: none;
+    border: none;
+    float: right;
+    color: #025f70;
+    font-weight: 800;
+}
+input{
+    border-radius: 5px;
+    min-width: 65%;
+    padding: 5px;
+    border: none;
+}
+.done{
+    background: #51DF70 !important;
+    color: #00891E;
+}
+.delete{
+    display: none;
+}
